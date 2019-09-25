@@ -1,0 +1,21 @@
+{
+  "name": "heatmap-frontend",
+  "description": "heatmap lets you have a view of your financial operations over the year",
+  "scripts": {
+    "postdeploy": "npm run build"
+  },
+  "env": {
+    "HEROKU_APP_NAME": {
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ],
+  "stack": "heroku-18"
+}
