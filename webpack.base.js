@@ -14,6 +14,7 @@ module.exports = {
       '@actions': path.resolve(__dirname, './src/actions'),
       '@components': path.resolve(__dirname, './src/components'),
       '@reducers': path.resolve(__dirname, './src/reducers'),
+      '@helpers': path.resolve(__dirname, './src/helpers'),
     },
   },
   module: {

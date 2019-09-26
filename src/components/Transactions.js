@@ -18,9 +18,14 @@ class Transactions extends Component {
 
   render() {
     const { transactions, errors } = this.props;
+    let data;
+    if(transactions){
+      data = transactions.transactions
+    } 
+
     return (
       <Fragment>
-        <Heat transactions={transactions} />
+        <Heat transactions={data} />
       </Fragment>
     );
   }
