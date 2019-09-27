@@ -20,6 +20,7 @@ export default function Heat(values) {
       endDate={new Date('2019-12-31')}
       values={new_date_list}
       showWeekdayLabels={true}
+      onClick={value => alert(`Clicked on ${value.date} with net value: ${value.profit}`)}
       classForValue={
         (value) => {
           if (!value) {
@@ -30,6 +31,13 @@ export default function Heat(values) {
           if(value.profit === 0) return `color-github-${percent(value.profit)}`;
       }
     }
+    tooltipDataAttrs={value => {
+      return {
+        'data-tip': `${value.date} has net-value: ${
+          value.profit
+        }`,
+      };
+    }}
     />
     </Fragment>
   );
