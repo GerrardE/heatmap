@@ -12,7 +12,7 @@ const dateList = (transactions) => {
   newDateArray.forEach(date=>{
     let transact = transactions && transactions.filter(detail => date === detail.date);
   
-    let date_object={};
+    let date_object={date: '', profit: 0};
     let profit=0;
   
     transact.forEach(transacted => {
@@ -22,13 +22,18 @@ const dateList = (transactions) => {
         profit += transacted.amount;
       }
 
-      date_object[date] = profit;
+      date_object.date = date;
+      date_object.profit = profit;
       date_list.push(date_object);
     })
   })
   
   let new_date_list = [...new Set(date_list)];
 
+  new_date_list.sort(function(a,b){
+    return new Date(a.date) - new Date(b.date);
+  });
+  
   return new_date_list;
 }
 

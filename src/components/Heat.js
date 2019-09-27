@@ -21,6 +21,8 @@ export default function Heat(values) {
 
   let new_date_list = dateList(transactions);
 
+  console.log(new_date_list)
+
   return (
     <div style={{ fontSize: "13px" }}>
       <HeatMap
