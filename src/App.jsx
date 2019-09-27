@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Transactions from '@components/Transactions';
 import store from './store';
+import './App.css';
 
 class App extends Component {
   render(){

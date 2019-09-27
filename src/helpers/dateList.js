@@ -12,7 +12,7 @@ const dateList = (transactions) => {
   newDateArray.forEach(date=>{
     let transact = transactions && transactions.filter(detail => date === detail.date);
   
-    let date_object={date: '', profit: 0};
+    let date_object={};
     let profit=0;
   
     transact.forEach(transacted => {
