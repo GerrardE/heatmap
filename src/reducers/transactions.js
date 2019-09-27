@@ -1,7 +1,8 @@
-import { GET_TRANSACTION_SUCCESS  } from "@actions/types";
+import { GET_TRANSACTION_SUCCESS } from "../actions/types";
 
 const initialState = {
-  transactions: null
+  transactions: null,
+  errors: null
 };
 
 export default (state = initialState, action) => {

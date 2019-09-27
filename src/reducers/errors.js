@@ -1,4 +1,4 @@
-import { GET_TRANSACTION_ERROR } from '@actions/types';
+import { GET_TRANSACTION_ERROR } from '../actions/types';
 
 const initialState = {
   errors: null
