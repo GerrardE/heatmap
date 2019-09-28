@@ -1,5 +1,4 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -19,17 +18,17 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   enforce: 'pre',
-      //   test: /\.(js|jsx)$/,
-      //   exclude: /node_modules/,
-      //   use: [{
-      //     options: {
-      //       eslintPath: require.resolve('eslint'),
-      //     },
-      //     loader: 'eslint-loader'
-      //   }]
-      // },
+      {
+        enforce: 'pre',
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: [{
+          options: {
+            eslintPath: require.resolve('eslint'),
+          },
+          loader: 'eslint-loader'
+        }]
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -38,7 +37,6 @@ module.exports = {
       {
         test: /\.(css|scss|sass)$/i,
         use: [
-          // MiniCssExtractPlugin.loader,
           { loader: 'style-loader' },
           { loader: 'css-loader', options: { sourceMap: true } },
           { loader: 'sass-loader', options: { sourceMap: true } }

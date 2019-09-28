@@ -17,8 +17,9 @@ class Transactions extends Component {
   }
 
   render() {
-    const { transactions, errors } = this.props;
+    const { transactions } = this.props;
     let data;
+    
     if(transactions){
       data = transactions.transactions
     } 
@@ -33,13 +34,13 @@ class Transactions extends Component {
 
 Transactions.propTypes = {
   getTransactions: PropTypes.func.isRequired,
-  // errors: PropTypes.shapeOf({}).isRequired,
-  // transactions: PropTypes.shapeOf({}).isRequired
+  transactions: PropTypes.shape({
+    transactions: PropTypes.array
+  }).isRequired
 };
 
 const mapStateToProps = state => ({
   transactions: state.transactions,
-  errors: state.errors
 });
 
 export default connect(mapStateToProps, { getTransactions })(withRouter(Transactions));

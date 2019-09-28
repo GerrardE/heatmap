@@ -31,10 +31,10 @@
       ],
       "@validations": [
         "src/validations"
-      ],
+      ]
     }
   },
   "exclude": [
     "node_modules"
-  ],
+  ]
 }
