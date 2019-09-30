@@ -30,6 +30,7 @@
   "homepage": "https://github.com/GerrardE/heatmap-frontend#readme",
   "devDependencies": {
     "assert": "^2.0.0",
+    "coveralls": "^3.0.6",
     "enzyme-to-json": "^3.4.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
