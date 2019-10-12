@@ -1,6 +1,6 @@
 
 # heatmap-frontend: React/Redux
-[![Build Status](https://travis-ci.org/GerrardE/heatmap.svg?branch=master)](https://travis-ci.org/GerrardE/heatmap) [![Coverage Status](https://coveralls.io/repos/github/GerrardE/heatmap/badge.svg?branch=master)](https://coveralls.io/github/GerrardE/heatmap?branch=master)[![Maintainability](https://api.codeclimate.com/v1/badges/ec3275da72fa854dc9c5/maintainability)](https://codeclimate.com/github/GerrardE/heatmap/maintainability)
+[![Build Status](https://travis-ci.org/GerrardE/heatmap.svg?branch=master)](https://travis-ci.org/GerrardE/heatmap) [![Coverage Status](https://coveralls.io/repos/github/GerrardE/heatmap/badge.svg?branch=master)](https://coveralls.io/github/GerrardE/heatmap?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/ec3275da72fa854dc9c5/maintainability)](https://codeclimate.com/github/GerrardE/heatmap/maintainability)
 
 ## Description
 Heatmap Front End Application with React.js and Redux. Heatmap lets you have a view of your financial operations over the year.
